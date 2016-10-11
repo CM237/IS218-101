@@ -1,7 +1,39 @@
-<html>
-<header><title> This is a lot harder than it seems</title></header>
+<!DOCTYPE html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="test.css" media="screen" />
+</head>
+<h1>Register an Account</h1>
+<h2>Please provide your info</h2>
+
 <body>
-Man, this sucks
+
+<p>In order to have access to this site, please enter your data in the forms provided below</p>
+
 </body>
-</html>
+
+<form action="/my-handling-form-page" method="post">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" />
+    </div>
+    <div>
+        <label for="Gender">Gender:</label>
+        <input type="Gender" id="Gender" name="user_gender" />
+    </div>
+   <div>
+        <label for="Birth">Date of Birth:</label>
+        <input type="Birth" id="Birth" name="user_Birth" />
+    </div>
+   <div>
+        <label for="user_nickname">User Nickname:</label>
+        <input type="User_nickname" id="User_nickname" name="user_nickname" />
+    </div>
+    
+        
+    <div class="button">
+        <button type="submit">Click here to finish</button>
+    </div>
+
+</form>
 
