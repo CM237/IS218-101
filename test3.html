@@ -1,25 +1,26 @@
 <?php
     
 //An example of array in php that I coded
-    const tree = "Nintendo"
-    $tree1 = "Mario"
+    const tree = "nintendo";?/or here???
+    $tree1 = "mario";//right here
 
     $Array1 = array($tree1, tree, "mushroom");
     $Array2 = array("star", "flower");
-    $Array3 = array(0 => "toadstool",
-                    5 => "systems",
-                    3 => "doppelganger",
-                    2 => 64
+    $Array3 = array("0" => "mario", //this where the issues begin
+                    "5" => "nintendo",
+                    "3" => "mushroom",
+                    "2" => 64
                     "tree" => "another stage"
-                    "systems" => "another game"
+                    "nintendo" => "another game"
                     );
 
-    print "<pre>";
+    print "<pre>"; // Text in a pre element is displayed in a fixed-width font, and it preserves both spaces and line breaks
     print_r ($Array3);
     print "</pre>"
 
 
 ?>
+// undefined const name value (tree) is used as an array value, PHP will generate a Notice error warning, saying the const name doesn't exist
 
 //<?php
 
