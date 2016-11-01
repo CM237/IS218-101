@@ -29,11 +29,11 @@
 //Testing functions addcslashes and addslashes
 
 $str = "Carlos Antonius Medina Baltodanus";
-echo $str." <br>";
-echo addcslashes ($str_myname, 'n'). "<br>";
-echo addcslashes ($str_myname, 'a'). "<br>";
+echo $str" <br>";
+echo addcslashes ($str_myname, 'n') "<br>";
+echo addcslashes ($str_myname, 'a') "<br>";
 
-echo addslashes ($str_myname). "<br>";
+echo addslashes ($str_myname) "<br>";
 ?>
 
 
