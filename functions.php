@@ -1,4 +1,4 @@
-<html>
+
 
     <?php
     //This is to test some functions and homework
@@ -41,5 +41,5 @@ echo addslashes ($str_myname). "<br>";
 
 
 
-</html>
+
 
