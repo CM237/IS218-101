@@ -1,5 +1,5 @@
 <html>
-<body>
+
     <?php
     //This is to test some functions and homework
     // Get a partial string from within your own name
@@ -26,18 +26,20 @@
     ?>
   </p>
 <?php
+//Testing functions addcslashes and addslashes
 
-$str_myname = "Carlos Antonious Medina";
+$str = "Carlos Antonius Medina Baltodanus";
 echo $str." <br>";
-echo addclashes ($str_myname, 'n'). "<br>";
-echo addclashes ($str_myname, 'a'). "<br>";
+echo addcslashes ($str_myname, 'n'). "<br>";
+echo addcslashes ($str_myname, 'a'). "<br>";
 
-echo 
-
-
-
+echo addslashes ($str_myname). "<br>";
 ?>
-</body>
+
+
+
+
+
 
 </html>
 
