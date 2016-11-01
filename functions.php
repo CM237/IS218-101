@@ -1,5 +1,5 @@
 <html>
-  <p>
+<body>
     <?php
     //This is to test some functions and homework
     // Get a partial string from within your own name
@@ -25,4 +25,19 @@
     print $lowercase;
     ?>
   </p>
+<?php
+
+$str_myname = "Carlos Antonious Medina";
+echo $str." <br>";
+echo addclashes ($str_myname, 'n'). "<br>";
+echo addclashes ($str_myname, 'a'). "<br>";
+
+echo 
+
+
+
+?>
+</body>
+
 </html>
+
