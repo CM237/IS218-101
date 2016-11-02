@@ -1,7 +1,9 @@
 
 <html>
 <body>
-<h1>ArraystoHTML CSV reasding assignments 3 and 4</h1>
+<h1>Arrays to HTML + CSV reading assignments 3 and 4</h1>
+<br></br>
+<h2>Both assignments combined</h2>
 
 <?php 
       
