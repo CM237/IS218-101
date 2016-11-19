@@ -1,4 +1,5 @@
 <?php
+            
 //some stuff
 // FACTORY - DECORATOR - BUILDER
 //build interfaces first - 1st step
@@ -9,9 +10,7 @@ interface carFactory
      * @return Product
      */
     public function buildCar($type);
-
 }
-
 /**
  * Product
  */
@@ -24,12 +23,10 @@ interface car
     public function getLocation();
     public function getType();
 }
-
 interface carBody //---->>> car decorator
 { 
     public function loadBody();
 }
-
 //build factories - 2nd step
 /**
  * First Factory
@@ -86,9 +83,7 @@ class UKCarFactory implements carFactory {
         return $car;
     }
 }
-
 // SECOND FACTORY  
-
 class USSuvFactory implements car {
      
     private $location;
@@ -169,7 +164,6 @@ class UKSedanFactory implements car {
      
 }
 //---------DECORATOR-------------
-
 class carlook implements carBody {
     public function loadBody() {
         echo "This is how the car looks.<br />";
@@ -177,7 +171,6 @@ class carlook implements carBody {
 }
 //-----------------------------------
 //------MAIN DECORATOR--------------
-
 abstract class emailcarDecorator implements carBody {
          
     protected $emailBody;
@@ -191,7 +184,6 @@ abstract class emailcarDecorator implements carBody {
 }
 //------------------------------------------
 //-----SUB-DECORATORS-----------------------
-
 class suvcarBody extends emailcarDecorator {
          
     public function loadBody() {
@@ -213,7 +205,6 @@ class sedancarBody extends emailcarDecorator {
     }
  
 }
-
 // USING OF FACTORY METHOD
 // --------------------------
 // US Car Factory
@@ -237,13 +228,11 @@ echo $UKSuv->getLocation().' based '. $UKSuv->getType();
 // UK based Sedan model
 $UKSedan = $UKFactory->buildCar('sedan');
 echo $UKSedan->getLocation().' based '. $UKSedan->getType();
-
 $carlook = new carlook();
 $carlook = new suvcarBody($carlook);
 $carlook = new sedancarBody($carlook);
 $carlook->loadBody();
 //------------BUILDER-------------
-
 class Product {
 private $name;
 public function setName($name) {
@@ -290,4 +279,5 @@ print_r($firstcarDirector->getProduct()->getName());
 // The product of the first car builder
 print_r($secondcarDirector->getProduct()->getName());
 // The product of the second car builder
-?>
+
+          ?>
