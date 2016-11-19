@@ -1,4 +1,4 @@
-<php?
+<?php
 //some changes
 
 // FACTORY - DECORATOR - ADAPTER
