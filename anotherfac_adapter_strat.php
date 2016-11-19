@@ -1,4 +1,4 @@
-<php?
+<?php
 //some stuff
 
 // ANOTHER FACTORY - ADAPTER - STRATEGY
