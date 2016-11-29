@@ -1,5 +1,5 @@
 <?php
-include "code/bootstrap.php";
+include "code/bootstrap1.php";
 
 $mailer = new Mailer();
 $mailer->addRecipient('shenglong00@hotmail.com');
