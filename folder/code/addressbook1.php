@@ -1,5 +1,8 @@
-//addressbook1
+
 <?php
+
+//addressbook1
+
 class addressbook1
 {
     private $_email;
