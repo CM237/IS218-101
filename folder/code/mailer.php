@@ -1,6 +1,10 @@
-//class mailer
+
 
 <?php
+
+//class mailer
+
+
 class mailer
 {
     private $_recipients;
