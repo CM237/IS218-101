@@ -1,7 +1,7 @@
 //class mailer
 
 <?php
-class Mailer
+class mailer
 {
     private $_recipients;
     public function addRecipient($email)
@@ -18,4 +18,4 @@ class Mailer
     }
 }
 
-?>
+
