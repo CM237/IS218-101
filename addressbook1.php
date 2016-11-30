@@ -19,4 +19,3 @@ class addressbook1
     }
 }
 
-?>
