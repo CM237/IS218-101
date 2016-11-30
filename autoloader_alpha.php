@@ -4,7 +4,7 @@ class Autoloader
     public static function loader($class)
     {
         $filename = strtolower($class) . '.php';
-        $file =/' . $filename;
+        $file =/' '. $filename;
         if (!file_exists($file))
         {
             return false;
@@ -12,3 +12,5 @@ class Autoloader
         include $file;
     }
 }
+
+?>
