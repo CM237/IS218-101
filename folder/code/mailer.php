@@ -1,16 +1,14 @@
 
 
 <?php
-
 //class mailer
-
 
 class mailer
 {
     private $_recipients;
     public function addRecipient($email)
     {
-        $recipient = new addressbook1($email);
+        $recipient = new Addressbook($email);
         $this->_recipients[] = $recipient;
     }
     public function send($message)
